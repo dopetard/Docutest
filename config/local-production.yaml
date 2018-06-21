@@ -1,0 +1,52 @@
+app:
+  port: 3003
+  url:
+    scheme: http
+    host: localhost
+    port: 3003
+  magicNumber: MAGIC_NUMBER
+  site:
+    logo:
+    brand:
+  defaultChain: btc
+  defaultNetwork: testnet
+
+db:
+  path: /tmp/poex-database-dev
+
+chains:
+  btc:
+    networks:
+      mainnet:
+        incomingPrivateKey: xprvXXXXX
+        outgoingPublicKey: xpubXXXXX
+        documentPrice: 200000
+        feeMultiplier: 2
+      testnet:
+        incomingPrivateKey: tprv8ZgxMBicQKsPdPxVNUqL8afrAqUUE9KXqzuRTnkDdNFm3DCGtrzTiWwj8ri5jRk1M1kwRcipRBofYCMEA3ec6W68JN1FbVxbBCkUXb9bWG3
+        outgoingPublicKey: tpubD6NzVbkrYhZ4WrzHG8VvXzKxjrzQPUWSRJWCkJnX3e49shT3XFp3u1ZbJyEDgr27272w4sfhpAK9Bwz8rkL7zDMs1mCvp4Juos5RjkJ3jNk
+        documentPrice: 100000
+        feeMultiplier: 4
+  bch:
+    networks:
+      mainnet:
+        incomingPrivateKey: xprvXXXXX
+        outgoingPublicKey: xprvXXXXX
+        documentPrice: 50000
+        feeMultiplier: 2
+      testnet:
+        incomingPrivateKey: tprvXXXXX
+        outgoingPublicKey: tpubXXXXX
+        documentPrice: 50000
+        feeMultiplier: 2
+
+mail:
+  from:
+  to:
+
+nodemailer:
+  options:
+    service: Gmail
+    auth:
+      user:
+      pass:
