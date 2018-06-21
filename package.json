@@ -8,7 +8,7 @@
   },
   "scripts": {
     "release": "npm run test && npm run build && release-it",
-    "build": "node ./scripts/build.js && NODE_ENV=production webpack",
+    "build": "npm run build && NODE_ENV=production",
     "server": "nodemon server/app.js",
     "sweep": "node lib/sweep.js",
     "lint": "standard 'lib/**/*.js' 'config/*.js' 'server/**/*.js'",
