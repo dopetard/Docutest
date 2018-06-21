@@ -13,7 +13,7 @@
     "sweep": "node lib/sweep.js",
     "lint": "standard 'lib/**/*.js' 'config/*.js' 'server/**/*.js'",
     "test": "mocha --timeout 10000 && npm run lint && npm run ui:test && npm run ui:lint",
-    "start": "NODE_ENV=production && npm start",
+    "start": "npm start",
     "ui:lint": "standard 'ui/app/**/*.jsx' 'ui/app/**/*.js' 'client/index.js'",
     "ui:lintfix": "standard --fix 'ui/app/**/*.jsx' 'ui/app/**/*.js' 'client/index.js'",
     "ui:test": "NODE_ENV=test mocha --require ui/testHelper.js  --reporter=nyan --require ignore-styles --compilers js:babel-core/register 'ui/app/**/**.test.js'",
