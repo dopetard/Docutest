@@ -24,10 +24,6 @@
       "ui/app/**/*.test.js"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/proofofexistence/proofofexistence.git"
-  },
   "babel": {
     "presets": [
       "es2015",
